@@ -1,0 +1,42 @@
+@import "./main";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,ins,hr{margin: 0;padding: 0;}
+ul,li{ list-style: none;}
+html, body { height: 100%; line-height: 1.5; color: @font-color; background: #fbfbfb;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;*/
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+#app{ height:100%; overflow: hidden; position: relative;}
+a{ text-decoration: none; -webkit-tap-highlight-color: transparent}
+a:hover{  }
+textarea,input{ outline:none; resize:none; padding: 0; margin: 0; }
+textarea,input,button{ -webkit-appearance:none; outline:none; border:none; background:none;}
+textarea:focus,input:focus{ outline:none; }
+
+.css-pages{ width: 100%; height: 100%; overflow: auto; background: #fbfbfb;}
+.show_loading{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;}
+
+
+.loaded_none{ text-align: center; font-size: 12px; padding: 15px 0;}
+
+.input{
+  input::-webkit-input-placeholder{
+  color:blue;
+}
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: blue;
+}
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: blue;
+}
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: blue;
+}
+}
